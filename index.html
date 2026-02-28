@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Time Home Buyer Guide for Ogden Utah | Local Utah Realty</title>
+  <meta name="description" content="The complete first time home buyer guide for Ogden, Utah. Learn about down payment assistance, FHA loans, local neighborhoods, and how to buy your first home in Weber County." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== FOREST CANOPY THEME ===== */
+    :root {
+      --forest:  #2d4a2b;
+      --sage:    #7d8471;
+      --olive:   #a4ac86;
+      --ivory:   #faf9f6;
+      --white:   #ffffff;
+      --dark:    #1a2b19;
+      --text:    #2e2e2e;
+      --light-bg:#f0f2eb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--ivory);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      color: var(--forest);
+    }
+
+    a { color: var(--forest); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--sage); }
+
+    /* ===== TOP NAV ===== */
+    nav {
+      background: var(--forest);
+      padding: 16px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    nav .logo {
+      font-family: 'Playfair Display', serif;
+      color: var(--ivory);
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    nav .logo span { color: var(--olive); }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+    nav ul a {
+      color: var(--olive);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    nav ul a:hover { color: var(--ivory); text-decoration: none; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--forest) 0%, #4a7a47 60%, var(--sage) 100%);
+      color: var(--ivory);
+      padding: 100px 40px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 350px; height: 350px;
+      border-radius: 50%;
+      background: rgba(164,172,134,0.12);
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -40px;
+      width: 280px; height: 280px;
+      border-radius: 50%;
+      background: rgba(164,172,134,0.08);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(164,172,134,0.25);
+      border: 1px solid var(--olive);
+      color: var(--olive);
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      color: var(--ivory);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.2;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 640px;
+      margin: 0 auto 36px;
+      color: rgba(250,249,246,0.85);
+    }
+    .hero-cta {
+      display: inline-flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn-primary {
+      background: var(--olive);
+      color: var(--forest);
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background: var(--ivory);
+      color: var(--forest);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      border: 2px solid var(--olive);
+      color: var(--olive);
+      padding: 12px 30px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+    .btn-outline:hover {
+      background: var(--olive);
+      color: var(--forest);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    /* ===== MAIN LAYOUT ===== */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section { padding: 72px 0; }
+    section:nth-child(even) { background: var(--light-bg); }
+
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin-bottom: 14px;
+    }
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--sage);
+      max-width: 620px;
+      margin-bottom: 44px;
+      line-height: 1.7;
+    }
+
+    /* ===== INTRO ===== */
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      margin-top: 44px;
+    }
+    .intro-card {
+      background: var(--white);
+      border: 1px solid #dde3d4;
+      border-radius: 10px;
+      padding: 28px;
+      border-top: 4px solid var(--forest);
+    }
+    .intro-card .icon {
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+    .intro-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .intro-card p {
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.65;
+    }
+
+    /* ===== FAQ SECTION ===== */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid #dde3d4;
+      border-radius: 8px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: box-shadow 0.2s;
+    }
+    .faq-item:hover {
+      box-shadow: 0 4px 16px rgba(45,74,43,0.1);
+    }
+    .faq-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--olive);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+      color: var(--forest);
+      font-weight: 700;
+    }
+    .faq-item p {
+      font-size: 0.93rem;
+      font-weight: 700;
+      color: var(--forest);
+      line-height: 1.4;
+      margin-top: 6px;
+    }
+
+    /* ===== ARTICLE LINK CARDS ===== */
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .article-card {
+      background: var(--white);
+      border: 1px solid #dde3d4;
+      border-radius: 10px;
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: all 0.2s;
+      position: relative;
+    }
+    .article-card:hover {
+      box-shadow: 0 6px 20px rgba(45,74,43,0.12);
+      transform: translateY(-3px);
+    }
+    .article-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--sage);
+    }
+    .article-card h3 {
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+    .article-card p {
+      font-size: 0.87rem;
+      color: #666;
+      line-height: 1.6;
+      flex: 1;
+    }
+    .article-link {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--forest);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .article-link::after { content: ' →'; }
+    .coming-soon {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--light-bg);
+      color: var(--sage);
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* ===== PROCESS STEPS ===== */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+    .steps::before {
+      content: '';
+      position: absolute;
+      left: 27px;
+      top: 20px;
+      bottom: 20px;
+      width: 2px;
+      background: var(--olive);
+    }
+    .step {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      background: var(--white);
+      border: 1px solid #dde3d4;
+      border-radius: 10px;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .step-num {
+      width: 54px;
+      height: 54px;
+      background: var(--forest);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ivory);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .step-body h3 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+    .step-body p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.65;
+    }
+
+    /* ===== CTA SECTION ===== */
+    .cta-section {
+      background: linear-gradient(135deg, var(--forest), #3d6b3a);
+      color: var(--ivory);
+      text-align: center;
+      padding: 90px 40px;
+    }
+    .cta-section h2 {
+      color: var(--ivory);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: 16px;
+    }
+    .cta-section p {
+      font-size: 1.1rem;
+      max-width: 580px;
+      margin: 0 auto 36px;
+      color: rgba(250,249,246,0.85);
+    }
+    .cta-pills {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .cta-pill {
+      background: rgba(164,172,134,0.2);
+      border: 1px solid rgba(164,172,134,0.5);
+      color: var(--olive);
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+    .cta-form {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .cta-form input {
+      flex: 1;
+      min-width: 220px;
+      padding: 14px 18px;
+      border: 2px solid rgba(164,172,134,0.4);
+      background: rgba(255,255,255,0.08);
+      border-radius: 6px;
+      color: var(--ivory);
+      font-family: 'Lato', sans-serif;
+      font-size: 0.95rem;
+    }
+    .cta-form input::placeholder { color: rgba(250,249,246,0.5); }
+    .cta-form input:focus {
+      outline: none;
+      border-color: var(--olive);
+    }
+    .cta-note {
+      margin-top: 16px;
+      font-size: 0.82rem;
+      color: rgba(250,249,246,0.5);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--dark);
+      color: rgba(250,249,246,0.6);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--olive); }
+
+    /* ===== DIVIDER ===== */
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: var(--olive);
+      margin: 16px 0 32px;
+      border-radius: 2px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .intro-grid { grid-template-columns: 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
+      nav ul { display: none; }
+      .hero { padding: 70px 24px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Local Utah <span>Realty</span></div>
+  <ul>
+    <li><a href="#loans">Loan Options</a></li>
+    <li><a href="#down-payment">Down Payment</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#market">Ogden Market</a></li>
+    <li><a href="#contact">Free Consult</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">📍 Ogden & Weber County, Utah</div>
+  <h1>First Time Home Buyer Guide for Ogden, Utah</h1>
+  <p>Everything you need to go from renting to owning — local programs, loan breakdowns, neighborhood insights, and expert guidance built specifically for Ogden buyers.</p>
+  <div class="hero-cta">
+    <a href="#contact" class="btn-primary">Get a Free Buyer Consultation</a>
+    <a href="#faq" class="btn-outline">Browse Common Questions</a>
+  </div>
+</div>
+
+<!-- INTRO SECTION -->
+<section id="intro">
+  <div class="container">
+    <div class="section-label">Start Here</div>
+    <h2 class="section-title">Who This Guide Is For</h2>
+    <div class="divider"></div>
+    <p class="section-subtitle">Whether you're just curious about buying or actively searching, this hub is your go-to resource for buying your first home in Ogden. Bookmark it and work through each section at your own pace.</p>
+
+    <div class="intro-grid">
+      <div class="intro-card">
+        <div class="icon">🏡</div>
+        <h3>Why Ogden Is Different</h3>
+        <p>Ogden's market moves faster than people expect. Weber County has unique down payment assistance programs, strong appreciation trends, and neighborhoods that vary widely in price — knowing the local landscape gives you a real edge.</p>
+      </div>
+      <div class="intro-card">
+        <div class="icon">🗺️</div>
+        <h3>How to Use This Guide</h3>
+        <p>Each section below links to a dedicated article that goes deep on one topic. Start with what feels most urgent — loan options, down payment, or affordability — and build your knowledge from there.</p>
+      </div>
+      <div class="intro-card">
+        <div class="icon">🤝</div>
+        <h3>You Don't Have to Figure It Out Alone</h3>
+        <p>Every section ends with an invitation to ask questions. There's no sales pressure, no obligation — just honest answers from a local team that knows Ogden and Weber County inside and out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq">
+  <div class="container">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Questions Ogden Buyers Are Asking Right Now</h2>
+    <div class="divider"></div>
+    <p class="section-subtitle">These are the real questions we hear every week from first time buyers in the Ogden area. Click any question to read the full answer.</p>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-icon">?</div>
+        <p>How much house can I afford with my income?</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-icon">?</div>
+        <p>What's the monthly payment on a $650k home in Utah?</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-icon">?</div>
+        <p>What is the Utah first time buyer down payment requirement?</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-icon">?</div>
+        <p>Do I need to be pre-approved before I can tour a home?</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-icon">?</div>
+        <p>Can I tour a house without a lender involved yet?</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-icon">?</div>
+        <p>What are the most common first time buyer mistakes in Utah?</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-icon">?</div>
+        <p>Is it better to rent or buy right now in Utah?</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-icon">?</div>
+        <p>How much are closing costs for a home buyer in Utah?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOAN OPTIONS -->
+<section id="loans">
+  <div class="container">
+    <div class="section-label">Financing Your First Home</div>
+    <h2 class="section-title">Loan Options for First Time Buyers in Ogden</h2>
+    <div class="divider"></div>
+    <p class="section-subtitle">The loan you choose affects your down payment, monthly payment, and how much you can borrow. Here's a breakdown of the most common options for Ogden buyers.</p>
+
+    <div class="article-grid">
+      <div class="article-card">
+        <div class="article-tag">FHA Loans</div>
+        <h3>FHA Loans for First Time Buyers in Utah</h3>
+        <p>FHA loans are the most popular choice for first time buyers in Utah. Learn about the 3.5% down payment option, credit score minimums, and what makes FHA a great starting point.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+      <div class="article-card">
+        <div class="article-tag">Conventional Loans</div>
+        <h3>Conventional Loans — When They Make Sense in Ogden</h3>
+        <p>Conventional loans can offer lower long-term costs if your credit score and down payment qualify. Find out when a conventional loan beats FHA for Ogden buyers.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+      <div class="article-card">
+        <span class="coming-soon">Coming Soon</span>
+        <div class="article-tag">FHA vs Conventional</div>
+        <h3>FHA vs Conventional Loans — Side-by-Side Comparison</h3>
+        <p>A detailed head-to-head comparison of both loan types to help you choose the right fit for your financial situation and goals.</p>
+        <span class="article-link" style="color: var(--sage); cursor: default;">Article coming soon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWN PAYMENT -->
+<section id="down-payment">
+  <div class="container">
+    <div class="section-label">Down Payment Help</div>
+    <h2 class="section-title">Down Payment &amp; Assistance Programs in Ogden</h2>
+    <div class="divider"></div>
+    <p class="section-subtitle">You may need far less than you think to get into your first home. Utah has some of the best assistance programs in the country — and Ogden buyers qualify for many of them.</p>
+
+    <div class="article-grid">
+      <div class="article-card">
+        <div class="article-tag">Down Payment</div>
+        <h3>Minimum Down Payment Options for Ogden Buyers</h3>
+        <p>From 0% down VA loans to 3.5% FHA options, learn how little you may actually need — and which programs are available to you right now in Weber County.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+      <div class="article-card">
+        <div class="article-tag">Gift Funds</div>
+        <h3>Using Gift Funds &amp; Family Help to Buy Your First Home</h3>
+        <p>Can a parent or family member help with your down payment? Yes — but there are rules. Learn exactly how gift funds work and what lenders require.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+      <div class="article-card">
+        <div class="article-tag">Assistance Programs</div>
+        <h3>Utah First Time Buyer Down Payment Assistance Programs</h3>
+        <p>A full guide to state and local programs including Utah Housing Corporation, USDA loans, and Ogden City grants that can cover part or all of your down payment.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIT & AFFORDABILITY -->
+<section id="credit">
+  <div class="container">
+    <div class="section-label">Credit &amp; Affordability</div>
+    <h2 class="section-title">Credit &amp; Affordability Education</h2>
+    <div class="divider"></div>
+    <p class="section-subtitle">Understanding your credit and what you can afford is the foundation of a stress-free home purchase. These articles break it all down in plain English.</p>
+
+    <div class="article-grid">
+      <div class="article-card">
+        <div class="article-tag">Credit Score</div>
+        <h3>Credit Score Requirements for Ogden Home Buyers</h3>
+        <p>What score do you actually need? We break down the minimums by loan type and share simple ways to improve your score before you apply.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+      <div class="article-card">
+        <div class="article-tag">Debt-to-Income</div>
+        <h3>Debt-to-Income Ratio Explained Simply for Utah Buyers</h3>
+        <p>DTI is one of the biggest factors lenders look at. Learn how to calculate yours, what's acceptable, and how to improve it before you apply.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+      <div class="article-card">
+        <div class="article-tag">Affordability</div>
+        <h3>How Much Home Can You Afford in Ogden, Utah?</h3>
+        <p>Walk through the real math of home affordability in Ogden — including income, taxes, insurance, and HOA — so you know exactly what to budget for.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS SECTION -->
+<section id="process">
+  <div class="container">
+    <div class="section-label">Step-by-Step</div>
+    <h2 class="section-title">The Home Buying Process in Ogden</h2>
+    <div class="divider"></div>
+    <p class="section-subtitle">Buying a home in Ogden doesn't have to feel overwhelming. Here's what the process looks like from start to keys-in-hand — and the articles that go deeper on each step.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Step-by-Step Guide to Buying a Home in Ogden</h3>
+          <p>From getting pre-approved to making an offer, this comprehensive guide walks you through every stage of the buying process specific to the Ogden and Weber County market. <a href="#">Read the full guide →</a></p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>What to Expect During Inspections &amp; Appraisals</h3>
+          <p>Inspections and appraisals can make or break a deal. Learn what inspectors look for in Utah homes, what appraisers consider, and how to navigate issues without losing the house. <a href="#">Read the full article →</a></p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>How Long Does It Take to Buy a Home in Weber County?</h3>
+          <p>Most buyers are surprised by how fast — or slow — things can move. Get a realistic timeline from offer to closing in the current Ogden market. <a href="#">Read the full article →</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL MARKET -->
+<section id="market">
+  <div class="container">
+    <div class="section-label">Know Your Market</div>
+    <h2 class="section-title">Local Ogden Market Education</h2>
+    <div class="divider"></div>
+    <p class="section-subtitle">The Ogden market has its own rhythms, neighborhoods, and price trends. These articles give you local intelligence that generic real estate sites simply can't offer.</p>
+
+    <div class="article-grid">
+      <div class="article-card">
+        <div class="article-tag">Market Data</div>
+        <h3>Average Home Prices in Ogden, Utah</h3>
+        <p>What does a home actually cost in Ogden right now? We break down current prices by area, home type, and how they compare to the broader Wasatch Front market.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+      <div class="article-card">
+        <div class="article-tag">Neighborhoods</div>
+        <h3>What First Time Buyers Should Know About Ogden Neighborhoods</h3>
+        <p>From East Bench to South Ogden to downtown — every pocket has a different feel and price point. Find out which neighborhoods make the most sense for your budget and lifestyle.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+      <div class="article-card">
+        <div class="article-tag">Buyer Mistakes</div>
+        <h3>Common Mistakes First Time Buyers Make in Ogden</h3>
+        <p>The errors we see most often — from waiting too long, skipping the inspection, or not understanding Weber County market timing. Avoid these and you're already ahead.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFINANCING -->
+<section id="refinancing">
+  <div class="container">
+    <div class="section-label">Long-Term Planning</div>
+    <h2 class="section-title">Refinancing &amp; Building Equity Over Time</h2>
+    <div class="divider"></div>
+    <p class="section-subtitle">Buying your first home is just the beginning. These articles help you think beyond closing day — and build real wealth through homeownership in Ogden.</p>
+
+    <div class="article-grid">
+      <div class="article-card">
+        <div class="article-tag">Refinancing</div>
+        <h3>When to Refinance from FHA to a Conventional Loan</h3>
+        <p>Many FHA buyers refinance once they've built equity. Learn the right time to make the switch, how to qualify, and how much you could save on your monthly payment.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+      <div class="article-card">
+        <div class="article-tag">Equity</div>
+        <h3>How Equity Works for Ogden Homeowners</h3>
+        <p>Equity is the most powerful wealth-building tool homeownership offers. Learn how it grows, how to use it wisely, and what Ogden's appreciation trends mean for your future net worth.</p>
+        <a href="#" class="article-link">Read the full article</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section id="contact" class="cta-section">
+  <h2>Ready to Take Your First Step?</h2>
+  <p>Ask us anything — about loans, neighborhoods, your credit, or whether now is the right time. No pressure, no obligation, just straight answers from a local Ogden team.</p>
+
+  <div class="cta-pills">
+    <span class="cta-pill">✅ 100% Free Consultation</span>
+    <span class="cta-pill">✅ No Obligation to Buy</span>
+    <span class="cta-pill">✅ Local Ogden Experts</span>
+  </div>
+
+  <div class="cta-form">
+    <input type="text" placeholder="Your name" />
+    <input type="tel" placeholder="Your phone number" />
+  </div>
+  <br/>
+  <a href="#" class="btn-primary" style="font-size: 1rem; padding: 16px 40px;">Request My Free Buyer Consultation →</a>
+  <p class="cta-note">We respond within one business day. Your information is never shared or sold.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Local Utah Realty · Serving Ogden, Weber County &amp; the Wasatch Front · <a href="#">localutahrealty.com</a></p>
+  <p style="margin-top: 8px;">This guide is for educational purposes. For personalized advice, consult a licensed mortgage professional.</p>
+</footer>
+
+</body>
+</html>
