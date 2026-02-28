@@ -305,7 +305,7 @@
       align-items: center;
       gap: 4px;
     }
-    .article-link::after { content: ' â'; }
+    .article-link::after { content: ' Ã¢ÂÂ'; }
     .coming-soon {
       position: absolute;
       top: 14px;
@@ -480,7 +480,7 @@
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-badge">ð Ogden & Weber County, Utah</div>
+  <div class="hero-badge">Ã°ÂÂÂ Ogden & Weber County, Utah</div>
   <h1>First Time Home Buyer Guide for Ogden, Utah</h1>
   <p>Everything you need to go from renting to owning: local programs, loan breakdowns, neighborhood insights, and expert guidance built specifically for Ogden buyers.</p>
   <div class="hero-cta">
@@ -499,17 +499,17 @@
 
     <div class="intro-grid">
       <div class="intro-card">
-        <div class="icon">ð¡</div>
+        <div class="icon">Ã°ÂÂÂ¡</div>
         <h3>Why Ogden Is Different</h3>
         <p>Ogden's market moves faster than people expect. Weber County has unique down payment assistance programs, strong appreciation trends, and neighborhoods that vary widely in price. Knowing the local landscape gives you a real edge.</p>
       </div>
       <div class="intro-card">
-        <div class="icon">ðºï¸</div>
+        <div class="icon">Ã°ÂÂÂºÃ¯Â¸Â</div>
         <h3>How to Use This Guide</h3>
         <p>Each section below links to a dedicated article that goes deep on one topic. Start with what feels most urgent, whether that is loan options, down payment, or affordability, and build your knowledge from there.</p>
       </div>
       <div class="intro-card">
-        <div class="icon">ð¤</div>
+        <div class="icon">Ã°ÂÂ¤Â</div>
         <h3>You Don't Have to Figure It Out Alone</h3>
         <p>Every section ends with an invitation to ask questions. There's no sales pressure, no obligation, just honest answers from a local team that knows Ogden and Weber County inside and out.</p>
       </div>
@@ -668,21 +668,21 @@
         <div class="step-num">1</div>
         <div class="step-body">
           <h3>Step by Step Guide to Buying a Home in Ogden</h3>
-          <p>From getting pre-approved to making an offer, this comprehensive guide walks you through every stage of the buying process specific to the Ogden and Weber County market. <a href="#">Read the full guide â</a></p>
+          <p>From getting pre-approved to making an offer, this comprehensive guide walks you through every stage of the buying process specific to the Ogden and Weber County market. <a href="#">Read the full guide Ã¢ÂÂ</a></p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">2</div>
         <div class="step-body">
           <h3>What to Expect During Inspections &amp; Appraisals</h3>
-          <p>Inspections and appraisals can make or break a deal. Learn what inspectors look for in Utah homes, what appraisers consider, and how to navigate issues without losing the house. <a href="#">Read the full article â</a></p>
+          <p>Inspections and appraisals can make or break a deal. Learn what inspectors look for in Utah homes, what appraisers consider, and how to navigate issues without losing the house. <a href="#">Read the full article Ã¢ÂÂ</a></p>
         </div>
       </div>
       <div class="step">
         <div class="step-num">3</div>
         <div class="step-body">
           <h3>How Long Does It Take to Buy a Home in Weber County?</h3>
-          <p>Most buyers are surprised by how fast or slow things can move. Get a realistic timeline from offer to closing in the current Ogden market. <a href="#">Read the full article â</a></p>
+          <p>Most buyers are surprised by how fast or slow things can move. Get a realistic timeline from offer to closing in the current Ogden market. <a href="#">Read the full article Ã¢ÂÂ</a></p>
         </div>
       </div>
     </div>
@@ -751,25 +751,60 @@
   <p>Ask us anything about loans, neighborhoods, your credit, or whether now is the right time. No pressure, no obligation, just straight answers from a local Ogden team.</p>
 
   <div class="cta-pills">
-    <span class="cta-pill">â 100% Free Consultation</span>
-    <span class="cta-pill">â No Obligation to Buy</span>
-    <span class="cta-pill">â Local Ogden Experts</span>
+    <span class="cta-pill">Ã¢ÂÂ 100% Free Consultation</span>
+    <span class="cta-pill">Ã¢ÂÂ No Obligation to Buy</span>
+    <span class="cta-pill">Ã¢ÂÂ Local Ogden Experts</span>
   </div>
 
-  <div class="cta-form">
-    <input type="text" placeholder="Your name" />
-    <input type="tel" placeholder="Your phone number" />
-  </div>
-  <br/>
-  <a href="#" class="btn-primary" style="font-size: 1rem; padding: 16px 40px;">Request My Free Buyer Consultation â</a>
-  <p class="cta-note">We respond within one business day. Your information is never shared or sold.</p>
+  <form action="https://api.web3forms.com/submit" method="POST" id="consult-form">
+    <input type="hidden" name="access_key" value="acee3261-66b5-4685-9d15-85410048718b">
+    <input type="hidden" name="subject" value="Free Buyer Consultation Request - Local Utah Realty Hub">
+    <input type="hidden" name="from_name" value="Local Utah Realty Hub">
+    <div class="cta-form">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="tel" name="phone" placeholder="Your phone number" required />
+    </div>
+    <br/>
+    <button type="submit" class="btn-primary" style="font-size: 1rem; padding: 16px 40px; border: none; cursor: pointer;">Request My Free Buyer Consultation →</button>
+    <p class="cta-note">We respond within one business day. Your information is never shared or sold.</p>
+    <p id="consult-result" style="display:none; margin-top:14px; font-weight:700; font-size:1rem;"></p>
+  </form>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>Â© 2026 Local Utah Realty Â· Serving Ogden, Weber County &amp; the Wasatch Front Â· <a href="https://www.localutahrealty.com/" target="_blank">localutahrealty.com</a></p>
+  <p>ÃÂ© 2026 Local Utah Realty ÃÂ· Serving Ogden, Weber County &amp; the Wasatch Front ÃÂ· <a href="https://www.localutahrealty.com/" target="_blank">localutahrealty.com</a></p>
   <p style="margin-top: 8px;">This guide is for educational purposes. For personalized advice, consult a licensed mortgage professional.</p>
 </footer>
 
+<script>
+document.getElementById('consult-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = this.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(this) });
+    const d = await res.json();
+    const msg = document.getElementById('consult-result');
+    if (d.success) {
+      msg.textContent = '✓ Got it! We will be in touch within one business day.';
+      msg.style.color = 'var(--olive)';
+      msg.style.display = 'block';
+      this.reset();
+    } else {
+      msg.textContent = 'Something went wrong. Please try again or call us directly.';
+      msg.style.color = '#ffaaaa';
+      msg.style.display = 'block';
+    }
+  } catch(err) {
+    const msg = document.getElementById('consult-result');
+    msg.textContent = 'Something went wrong. Please try again.';
+    msg.style.display = 'block';
+  }
+  btn.textContent = 'Request My Free Buyer Consultation →';
+  btn.disabled = false;
+});
+</script>
 </body>
 </html>
