@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conventional Loans and When They Make Sense in Ogden Utah | Local Utah Realty</title>
+  <meta name="description" content="Wondering if a conventional loan is right for your first home in Ogden? Learn the credit score requirements, down payment options, and when conventional beats FHA for Utah buyers." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== FOREST CANOPY THEME ===== */
+    :root {
+      --forest:  #2d4a2b;
+      --sage:    #7d8471;
+      --olive:   #a4ac86;
+      --ivory:   #faf9f6;
+      --white:   #ffffff;
+      --dark:    #1a2b19;
+      --text:    #2e2e2e;
+      --light-bg:#f0f2eb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--ivory);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--forest); }
+    a { color: var(--forest); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--sage); }
+
+    /* ===== NAV ===== */
+    nav {
+      background: var(--forest);
+      padding: 16px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    nav .logo { font-family: 'Playfair Display', serif; color: var(--ivory); font-size: 1.2rem; font-weight: 700; }
+    nav .logo span { color: var(--olive); }
+    nav ul { list-style: none; display: flex; gap: 28px; }
+    nav ul a { color: var(--olive); font-size: 0.88rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
+    nav ul a:hover { color: var(--ivory); text-decoration: none; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--forest) 0%, #4a7a47 60%, var(--sage) 100%);
+      color: var(--ivory);
+      padding: 80px 40px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: rgba(164,172,134,0.1);
+    }
+    .hero::after {
+      content: ''; position: absolute;
+      bottom: -80px; left: -40px;
+      width: 260px; height: 260px;
+      border-radius: 50%;
+      background: rgba(164,172,134,0.07);
+    }
+    .breadcrumb {
+      font-size: 0.82rem;
+      color: rgba(250,249,246,0.6);
+      margin-bottom: 16px;
+      position: relative; z-index: 1;
+    }
+    .breadcrumb a { color: var(--olive); }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(164,172,134,0.25);
+      border: 1px solid var(--olive);
+      color: var(--olive);
+      padding: 5px 16px;
+      border-radius: 30px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      position: relative; z-index: 1;
+    }
+    .hero h1 {
+      color: var(--ivory);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.2;
+      max-width: 780px;
+      margin: 0 auto 18px;
+      position: relative; z-index: 1;
+    }
+    .hero-meta {
+      font-size: 0.88rem;
+      color: rgba(250,249,246,0.65);
+      position: relative; z-index: 1;
+    }
+    .hero-meta span { margin: 0 10px; }
+
+    /* ===== LAYOUT ===== */
+    .page-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 56px;
+      align-items: start;
+    }
+
+    /* ===== ARTICLE ===== */
+    .article-body h2 { font-size: 1.65rem; margin: 48px 0 14px; }
+    .article-body h3 { font-size: 1.2rem; margin: 28px 0 10px; }
+    .article-body p { font-size: 1.02rem; margin-bottom: 20px; color: #3a3a3a; line-height: 1.85; }
+    .article-body .intro {
+      font-size: 1.1rem;
+      color: var(--sage);
+      line-height: 1.85;
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 2px solid #dde3d4;
+    }
+    .divider { width: 56px; height: 3px; background: var(--olive); border-radius: 2px; margin: 12px 0 28px; }
+
+    /* ===== HIGHLIGHT BOX ===== */
+    .highlight-box {
+      background: var(--light-bg);
+      border-left: 4px solid var(--forest);
+      border-radius: 0 8px 8px 0;
+      padding: 22px 26px;
+      margin: 32px 0;
+    }
+    .highlight-box p { margin: 0; font-size: 0.97rem; color: var(--forest); font-weight: 700; }
+    .highlight-box .sub { font-weight: 400; color: #555; margin-top: 6px; font-size: 0.92rem; }
+
+    /* ===== REQUIREMENT CARDS ===== */
+    .req-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0; }
+    .req-card {
+      background: var(--white);
+      border: 1px solid #dde3d4;
+      border-radius: 10px;
+      padding: 20px 22px;
+      border-top: 3px solid var(--forest);
+    }
+    .req-card .req-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--sage); margin-bottom: 8px; }
+    .req-card .req-value { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--forest); font-weight: 700; margin-bottom: 6px; }
+    .req-card p { font-size: 0.85rem !important; color: #666 !important; margin: 0 !important; line-height: 1.5 !important; }
+
+    /* ===== WHEN CONVENTIONAL WINS ===== */
+    .scenario-list { display: flex; flex-direction: column; gap: 14px; margin: 24px 0; }
+    .scenario {
+      background: var(--white);
+      border: 1px solid #dde3d4;
+      border-radius: 10px;
+      padding: 20px 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .scenario-icon {
+      width: 42px; height: 42px;
+      background: var(--olive);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .scenario h3 { font-size: 1rem; margin: 0 0 6px; }
+    .scenario p { font-size: 0.88rem !important; color: #666 !important; margin: 0 !important; line-height: 1.6 !important; }
+
+    /* ===== COMPARISON TABLE ===== */
+    .compare-table {
+      width: 100%; border-collapse: collapse; margin: 28px 0;
+      font-size: 0.93rem; border-radius: 10px; overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .compare-table thead { background: var(--forest); color: var(--ivory); }
+    .compare-table thead th { padding: 14px 20px; text-align: left; font-family: 'Lato', sans-serif; font-weight: 700; }
+    .compare-table tbody tr:nth-child(even) { background: var(--light-bg); }
+    .compare-table tbody tr:nth-child(odd) { background: var(--white); }
+    .compare-table tbody td { padding: 13px 20px; border-bottom: 1px solid #e8ede0; color: #444; }
+    .compare-table tbody td:first-child { font-weight: 700; color: var(--forest); }
+    .check { color: #2d7a2b; font-weight: 700; }
+    .cross { color: #a04040; font-weight: 700; }
+
+    /* ===== STEP LIST ===== */
+    .step-list { list-style: none; margin: 24px 0; display: flex; flex-direction: column; gap: 14px; }
+    .step-list li {
+      display: flex; align-items: flex-start; gap: 16px;
+      background: var(--white); border: 1px solid #dde3d4;
+      border-radius: 8px; padding: 16px 20px;
+    }
+    .step-num {
+      width: 34px; height: 34px;
+      background: var(--forest); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--ivory); font-weight: 700; font-size: 0.9rem; flex-shrink: 0;
+    }
+    .step-list li p { margin: 0 !important; font-size: 0.95rem !important; padding-top: 5px; }
+    .step-list li strong { color: var(--forest); }
+
+    /* ===== CTA BANNER ===== */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--forest), #3d6b3a);
+      border-radius: 12px; padding: 36px; text-align: center; margin: 48px 0 0;
+    }
+    .cta-banner h3 { color: var(--ivory); font-size: 1.4rem; margin-bottom: 12px; }
+    .cta-banner p { font-size: 0.95rem; color: rgba(250,249,246,0.8); margin-bottom: 22px; line-height: 1.65; }
+    .btn-primary {
+      background: var(--olive); color: var(--forest);
+      padding: 13px 28px; border-radius: 6px; font-weight: 700; font-size: 0.95rem;
+      display: inline-block; transition: all 0.2s;
+    }
+    .btn-primary:hover { background: var(--ivory); color: var(--forest); text-decoration: none; transform: translateY(-2px); }
+
+    /* ===== SIDEBAR ===== */
+    .sidebar { position: sticky; top: 90px; display: flex; flex-direction: column; gap: 24px; }
+    .sidebar-card { background: var(--white); border: 1px solid #dde3d4; border-radius: 10px; padding: 24px; }
+    .sidebar-card h4 { font-size: 1rem; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--olive); }
+    .toc-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .toc-list a { font-size: 0.88rem; color: var(--sage); display: block; padding: 4px 0; border-bottom: 1px solid #eef0e8; }
+    .toc-list a:hover { color: var(--forest); text-decoration: none; }
+    .toc-list li:last-child a { border-bottom: none; }
+
+    .quick-facts { display: flex; flex-direction: column; gap: 10px; }
+    .fact-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.87rem; padding-bottom: 10px; border-bottom: 1px solid #eef0e8; }
+    .fact-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .fact-label { color: var(--sage); font-weight: 700; }
+    .fact-value { color: var(--forest); font-weight: 700; text-align: right; }
+
+    .related-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .related-list a { font-size: 0.88rem; color: var(--forest); display: flex; align-items: flex-start; gap: 8px; line-height: 1.4; }
+    .related-list a::before { content: '→'; color: var(--olive); flex-shrink: 0; font-weight: 700; }
+
+    /* ===== FOOTER ===== */
+    footer { background: var(--dark); color: rgba(250,249,246,0.6); text-align: center; padding: 32px 24px; font-size: 0.85rem; }
+    footer a { color: var(--olive); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .page-wrap { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .req-grid { grid-template-columns: 1fr; }
+      nav ul { display: none; }
+      .hero { padding: 60px 24px 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="https://www.localutahrealty.com/" style="text-decoration:none;">
+    <div class="logo">Local Utah <span>Realty</span></div>
+  </a>
+  <ul>
+    <li><a href="https://localutahrealty.github.io/First-Time-Home-Buyer-Hub/">Buyer Hub</a></li>
+    <li><a href="https://www.localutahrealty.com/blog/">Blog</a></li>
+    <li><a href="#consult">Free Consult</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="breadcrumb">
+    <a href="https://localutahrealty.github.io/First-Time-Home-Buyer-Hub/">Back to First Time Buyer Hub</a>
+    <span style="margin: 0 8px;">·</span> Loan Options
+  </div>
+  <div class="hero-badge">🏡 Conventional Loans · Ogden and Weber County</div>
+  <h1>Conventional Loans and When They Make Sense in Ogden, Utah</h1>
+  <div class="hero-meta">
+    <span>By Local Utah Realty</span>
+    <span>·</span>
+    <span>7 min read</span>
+    <span>·</span>
+    <span>Updated February 2026</span>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="page-wrap">
+
+  <article class="article-body">
+
+    <p class="intro">FHA gets most of the attention when first time buyers start researching loans, but conventional loans deserve a closer look. For buyers in Ogden with solid credit and a little more saved up, a conventional loan can cost less over time and offer more flexibility. Here is how to know if it is the right fit for you.</p>
+
+    <h2 id="what-is-conventional">What Is a Conventional Loan?</h2>
+    <div class="divider"></div>
+    <p>A conventional loan is any mortgage that is not backed by a government program like FHA, VA, or USDA. It is issued by private lenders and follows guidelines set by Fannie Mae and Freddie Mac, the two government-sponsored enterprises that purchase most mortgages in the country.</p>
+    <p>Because there is no government guarantee behind the loan, lenders set higher standards for credit and income. But for buyers who qualify, conventional loans can offer real advantages including lower overall costs and the ability to cancel mortgage insurance once you build enough equity.</p>
+
+    <h2 id="requirements">Conventional Loan Requirements in Utah</h2>
+    <div class="divider"></div>
+    <p>Here is what most lenders look for when you apply for a conventional loan in Ogden or Weber County:</p>
+
+    <div class="req-grid">
+      <div class="req-card">
+        <div class="req-label">Minimum Credit Score</div>
+        <div class="req-value">620+</div>
+        <p>Most lenders want 620 at minimum. The best rates come at 740 or higher.</p>
+      </div>
+      <div class="req-card">
+        <div class="req-label">Minimum Down Payment</div>
+        <div class="req-value">3 to 5%</div>
+        <p>As low as 3% with some programs. Put down 20% and you skip mortgage insurance entirely.</p>
+      </div>
+      <div class="req-card">
+        <div class="req-label">Max Debt to Income</div>
+        <div class="req-value">45%</div>
+        <p>Slightly stricter than FHA. Some lenders go up to 50% with strong compensating factors.</p>
+      </div>
+      <div class="req-card">
+        <div class="req-label">Loan Limit (Weber County)</div>
+        <div class="req-value">$806,500</div>
+        <p>The 2025 conforming loan limit for Weber County, well above FHA limits.</p>
+      </div>
+    </div>
+
+    <h3>Employment and Income</h3>
+    <p>Two years of consistent employment history is standard. Self-employed buyers can qualify with two years of tax returns showing stable or growing income. Lenders want to see that your income is reliable, not just high.</p>
+
+    <h3>Property Requirements</h3>
+    <p>Conventional loans have fewer property restrictions than FHA. This makes them a better fit for fixer-uppers, investment properties, or homes with minor cosmetic issues that might not pass an FHA appraisal. If you are eyeing a property with deferred maintenance or cosmetic wear, conventional financing is often the better path.</p>
+
+    <h2 id="when-conventional-wins">When a Conventional Loan Beats FHA in Ogden</h2>
+    <div class="divider"></div>
+    <p>Conventional is not always better, but there are clear situations where it comes out ahead for Ogden buyers.</p>
+
+    <div class="scenario-list">
+      <div class="scenario">
+        <div class="scenario-icon">💳</div>
+        <div>
+          <h3>Your Credit Score Is 680 or Higher</h3>
+          <p>Once your score crosses 680, conventional loan rates become very competitive. Above 740 you will likely get a better rate with conventional than FHA, which has the same rate for everyone regardless of credit score.</p>
+        </div>
+      </div>
+      <div class="scenario">
+        <div class="scenario-icon">💰</div>
+        <div>
+          <h3>You Have 5% or More to Put Down</h3>
+          <p>With 5% down on a conventional loan, your mortgage insurance is lower than FHA and it is cancellable. FHA mortgage insurance sticks around for the life of the loan in most cases. Conventional PMI disappears automatically at 20% equity.</p>
+        </div>
+      </div>
+      <div class="scenario">
+        <div class="scenario-icon">🏚️</div>
+        <div>
+          <h3>The Home Has Condition Issues</h3>
+          <p>FHA appraisers flag safety concerns that conventional appraisers often let pass. If the home you want has peeling paint, a dated roof, or other issues, conventional financing is much less likely to kill the deal.</p>
+        </div>
+      </div>
+      <div class="scenario">
+        <div class="scenario-icon">📈</div>
+        <div>
+          <h3>You Are Thinking Long Term</h3>
+          <p>Even if the monthly payment is slightly higher upfront, cancellable PMI means conventional loans often cost less over 5 to 10 years than an FHA loan with permanent mortgage insurance premiums.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="comparison">Conventional vs FHA: A Side by Side Look</h2>
+    <div class="divider"></div>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Conventional Loan</th>
+          <th>FHA Loan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Minimum Credit Score</td>
+          <td>620</td>
+          <td>580</td>
+        </tr>
+        <tr>
+          <td>Minimum Down Payment</td>
+          <td>3 to 5%</td>
+          <td>3.5%</td>
+        </tr>
+        <tr>
+          <td>Mortgage Insurance</td>
+          <td class="check">Cancellable at 20% equity</td>
+          <td class="cross">Required for life of loan</td>
+        </tr>
+        <tr>
+          <td>Weber County Loan Limit</td>
+          <td class="check">$806,500</td>
+          <td>$524,225</td>
+        </tr>
+        <tr>
+          <td>Property Condition Rules</td>
+          <td class="check">More flexible</td>
+          <td>Stricter FHA standards</td>
+        </tr>
+        <tr>
+          <td>Best For</td>
+          <td>680+ credit, 5%+ saved</td>
+          <td>620 or below credit, less saved</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="mortgage-insurance">Understanding Conventional PMI</h2>
+    <div class="divider"></div>
+    <p>If you put less than 20% down on a conventional loan, you will pay Private Mortgage Insurance, commonly called PMI. Here is what makes it different from FHA mortgage insurance:</p>
+
+    <div class="highlight-box">
+      <p>Conventional PMI is cancellable. FHA mortgage insurance is not.</p>
+      <p class="sub">Once you reach 20% equity in your home, you can request PMI removal. At 22% equity, your lender is legally required to cancel it automatically. With FHA, most buyers pay mortgage insurance for the entire life of the loan unless they refinance into a conventional loan later.</p>
+    </div>
+
+    <p>PMI on a conventional loan typically runs 0.5% to 1.5% per year depending on your credit score and down payment. On a $375,000 loan with 5% down, that is roughly $150 to $450 per month. As your equity grows, that cost drops and eventually disappears entirely.</p>
+
+    <h2 id="next-steps">How to Know If Conventional Is Right for You</h2>
+    <div class="divider"></div>
+    <p>The best way to know is to run both scenarios side by side with a local lender. At Local Utah Realty, we help buyers compare FHA and conventional options every week so you can see the actual monthly payment difference and total cost over time before you decide.</p>
+
+    <ul class="step-list">
+      <li>
+        <div class="step-num">1</div>
+        <p><strong>Check your credit score.</strong> If you are at 680 or above, conventional is worth a serious look. Free options include Credit Karma, Experian, or your bank app.</p>
+      </li>
+      <li>
+        <div class="step-num">2</div>
+        <p><strong>Know your down payment.</strong> Have at least 3 to 5% saved? That is enough to qualify. Have 10% or more? You may qualify for better rates and lower PMI.</p>
+      </li>
+      <li>
+        <div class="step-num">3</div>
+        <p><strong>Calculate your debt to income ratio.</strong> Add up all monthly debt payments and divide by your gross monthly income. Aim for 45% or below for conventional.</p>
+      </li>
+      <li>
+        <div class="step-num">4</div>
+        <p><strong>Talk to a local lender.</strong> Ask them to quote both FHA and conventional so you can compare the full picture including rate, monthly payment, and total mortgage insurance paid over time.</p>
+      </li>
+      <li>
+        <div class="step-num">5</div>
+        <p><strong>Get pre-approved.</strong> Weber County sellers expect a pre-approval letter with every offer. Get yours before you start touring so you are ready to move fast when you find the right home.</p>
+      </li>
+    </ul>
+
+    <div class="cta-banner" id="consult">
+      <h3>Not Sure Which Loan Is Right for You?</h3>
+      <p>We help Ogden buyers compare FHA and conventional options every week. No pressure, no obligation. Just honest answers so you can make the right call for your situation.</p>
+      <a href="https://localutahrealty.github.io/First-Time-Home-Buyer-Hub/#contact" class="btn-primary">Request a Free Buyer Consultation</a>
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h4>Conventional Quick Facts</h4>
+      <div class="quick-facts">
+        <div class="fact-row">
+          <span class="fact-label">Min. Credit Score</span>
+          <span class="fact-value">620</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Min. Down Payment</span>
+          <span class="fact-value">3 to 5%</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Weber County Limit</span>
+          <span class="fact-value">$806,500</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Max DTI</span>
+          <span class="fact-value">45%</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">PMI</span>
+          <span class="fact-value">Cancellable</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Best Credit Score</span>
+          <span class="fact-value">680 or above</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>In This Article</h4>
+      <ul class="toc-list">
+        <li><a href="#what-is-conventional">What Is a Conventional Loan?</a></li>
+        <li><a href="#requirements">Requirements in Utah</a></li>
+        <li><a href="#when-conventional-wins">When Conventional Beats FHA</a></li>
+        <li><a href="#comparison">Conventional vs FHA Comparison</a></li>
+        <li><a href="#mortgage-insurance">Understanding PMI</a></li>
+        <li><a href="#next-steps">How to Get Started</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>Related Articles</h4>
+      <ul class="related-list">
+        <li><a href="https://www.localutahrealty.com/blog/2041/FHA+Loans+First+Time+Home+Buyers+Utah+" target="_blank">FHA Loans for First Time Buyers in Utah</a></li>
+        <li><a href="https://www.localutahrealty.com/blog/2009/FHA+vs+Conventional+Loans+Davis+Weber+County+Utah" target="_blank">FHA vs Conventional Loans: Davis and Weber County</a></li>
+        <li><a href="https://localutahrealty.github.io/First-Time-Home-Buyer-Hub/#down-payment">Down Payment Assistance Programs in Ogden</a></li>
+        <li><a href="https://localutahrealty.github.io/First-Time-Home-Buyer-Hub/">Back to Full Buyer Hub</a></li>
+      </ul>
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Local Utah Realty · Serving Ogden, Weber County and the Wasatch Front · <a href="https://www.localutahrealty.com/" target="_blank">localutahrealty.com</a></p>
+  <p style="margin-top: 8px;">This article is for educational purposes. For personalized advice, consult a licensed mortgage professional.</p>
+</footer>
+
+</body>
+</html>
